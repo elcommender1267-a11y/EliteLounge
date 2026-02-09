@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♛ Elite Lounge ♛ — Événements Wolvesville</title>
+    <meta name="description" content="Événements mensuels Wolvesville — Concours Skins, XP & Quêtes Spéciales">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts - Design luxe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- HEADER SIMPLE -->
+    <!-- ============================================ -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="crown">♛</span>
+                <span class="brand-text">Elite Lounge</span>
+                <span class="crown">♛</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================ -->
+        <!-- HERO SECTION -->
+        <!-- ============================================ -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">Premium Wolvesville Community</div>
+                    <h1 class="hero-title">
+                        <span class="crown-large">♛</span>
+                        Elite Lounge
+                        <span class="crown-large">♛</span>
+                    </h1>
+                    <p class="hero-subtitle">Événements mensuels Wolvesville — Skins, XP & Quêtes Spéciales</p>
+                    <p class="hero-description">Rejoignez l'élite des joueurs Wolvesville. Participez à nos compétitions mensuelles exclusives et prouvez votre valeur.</p>
+                    <div class="season-badge-hero">
+                        <!-- MODIFIER ICI : Mois et année en cours -->
+                        Saison en cours : Février 2026
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ÉVÉNEMENTS GRID - CLIQUABLES -->
+        <!-- ============================================ -->
+        <section class="events-section">
+            <div class="container">
+                <div class="events-grid">
+                    
+                    <!-- Event Card 1 : Skins -->
+                    <article class="event-card" onclick="openEvent('skins')">
+                        <div class="event-icon">🎨</div>
+                        <h3 class="event-title">Concours Skins</h3>
+                        <p class="event-type">Mensuel — Jugement STAFF</p>
+                        <p class="event-description">
+                            Créez le skin le plus créatif et original sur le thème du mois. Jugé par notre équipe STAFF selon des critères professionnels.
+                        </p>
+                        <div class="event-stats">
+                            <div class="stat">
+                                <span class="stat-label">Participants max</span>
+                                <span class="stat-value">Illimité</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Récompense</span>
+                                <!-- MODIFIER ICI : Récompense du concours Skins -->
+                                <span class="stat-value">500 points</span>
+                            </div>
+                        </div>
+                        <div class="btn btn-outline">Voir les détails</div>
+                    </article>
+
+                    <!-- Event Card 2 : XP -->
+                    <article class="event-card event-card-featured" onclick="openEvent('xp')">
+                        <div class="featured-badge">Popular</div>
+                        <div class="event-icon">⚡</div>
+                        <h3 class="event-title">Concours XP</h3>
+                        <p class="event-type">Mensuel — Progression</p>
+                        <p class="event-description">
+                            Grindez un maximum d'XP durant le mois. Classement des 10 meilleurs joueurs selon la progression totale.
+                        </p>
+                        <div class="event-stats">
+                            <div class="stat">
+                                <span class="stat-label">Top classés</span>
+                                <span class="stat-value">10 joueurs</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Récompense</span>
+                                <!-- MODIFIER ICI : Récompense du concours XP -->
+                                <span class="stat-value">1000 points</span>
+                            </div>
+                        </div>
+                        <div class="btn btn-outline">Voir les détails</div>
+                    </article>
+
+                    <!-- Event Card 3 : Quêtes -->
+                    <article class="event-card" onclick="openEvent('quests')">
+                        <div class="event-icon">🎯</div>
+                        <h3 class="event-title">Quêtes Spéciales</h3>
+                        <p class="event-type">Mensuel — Validation STAFF</p>
+                        <p class="event-description">
+                            Claim des quêtes aléatoires et sois le premier à valider 10 quêtes. Une seule quête active à la fois !
+                        </p>
+                        <div class="event-stats">
+                            <div class="stat">
+                                <span class="stat-label">Objectif</span>
+                                <span class="stat-value">10 quêtes</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Récompense</span>
+                                <!-- MODIFIER ICI : Récompense du concours Quêtes -->
+                                <span class="stat-value">1500 points</span>
+                            </div>
+                        </div>
+                        <div class="btn btn-outline">Voir les détails</div>
+                    </article>
+
+                    <!-- Event Card 4 : FAQ / Contact -->
+                    <article class="event-card" onclick="openEvent('faq')">
+                        <div class="event-icon">❓</div>
+                        <h3 class="event-title">FAQ & Contact</h3>
+                        <p class="event-type">Informations & Support</p>
+                        <p class="event-description">
+                            Questions fréquentes, règles générales et informations de contact pour rejoindre notre communauté.
+                        </p>
+                        <div class="event-stats">
+                            <div class="stat">
+                                <span class="stat-label">Support</span>
+                                <span class="stat-value">24/7</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Discord</span>
+                                <span class="stat-value">Actif</span>
+                            </div>
+                        </div>
+                        <div class="btn btn-outline">Voir les infos</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- MODAL / PAGE DÉTAILS - SKINS -->
+    <!-- ============================================ -->
+    <div id="modal-skins" class="modal">
+        <div class="modal-overlay" onclick="closeEvent()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeEvent()">×</button>
+            
+            <div class="modal-header">
+                <span class="section-icon">🎨</span>
+                <h2 class="section-title">Concours Skins</h2>
+                <p class="section-subtitle">Mensuel — Jugement professionnel par le STAFF</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="card">
+                    <h3 class="card-title">À propos du concours</h3>
+                    <p class="card-text">
+                        Chaque mois, notre STAFF vous propose un thème créatif. Créez un skin Wolvesville unique en respectant ce thème et envoyez votre meilleure création. Les skins sont évalués selon des critères stricts de style, originalité et respect du thème.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Règles officielles</h3>
+                    <ul class="rules-list">
+                        <li>
+                            <span class="rule-number">1</span>
+                            <div class="rule-content">
+                                <strong>Une participation par joueur</strong> — Vous ne pouvez soumettre qu'un seul skin par mois
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">2</span>
+                            <div class="rule-content">
+                                <strong>Thème du mois</strong> — 
+                                <!-- MODIFIER ICI : Thème du mois -->
+                                <span class="highlight">« Hiver Mystique »</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">3</span>
+                            <div class="rule-content">
+                                <strong>Preuve requise</strong> — Screenshot haute qualité de votre skin in-game
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">4</span>
+                            <div class="rule-content">
+                                <strong>Deadline</strong> — 
+                                <!-- MODIFIER ICI : Date limite -->
+                                28 Février 2026 à 23h59 UTC
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Critères de jugement STAFF</h3>
+                    <div class="criteria-grid">
+                        <div class="criteria-item">
+                            <div class="criteria-header">
+                                <span class="criteria-icon">✨</span>
+                                <span class="criteria-name">Style</span>
+                            </div>
+                            <div class="criteria-score">/10 points</div>
+                            <p class="criteria-desc">Esthétique, harmonie des couleurs</p>
+                        </div>
+                        <div class="criteria-item">
+                            <div class="criteria-header">
+                                <span class="criteria-icon">💡</span>
+                                <span class="criteria-name">Originalité</span>
+                            </div>
+                            <div class="criteria-score">/10 points</div>
+                            <p class="criteria-desc">Créativité, innovation</p>
+                        </div>
+                        <div class="criteria-item">
+                            <div class="criteria-header">
+                                <span class="criteria-icon">🎯</span>
+                                <span class="criteria-name">Respect du thème</span>
+                            </div>
+                            <div class="criteria-score">/10 points</div>
+                            <p class="criteria-desc">Fidélité au thème</p>
+                        </div>
+                        <div class="criteria-item criteria-item-bonus">
+                            <div class="criteria-header">
+                                <span class="criteria-icon">👑</span>
+                                <span class="criteria-name">Bonus Rareté</span>
+                            </div>
+                            <div class="criteria-score">+2 points</div>
+                            <p class="criteria-desc">Skins rares ou légendaires</p>
+                        </div>
+                    </div>
+                    <div class="criteria-total">
+                        Score maximum : <strong>32 points</strong>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Comment participer</h3>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Créez votre skin</h4>
+                                <p>Respectez le thème du mois</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Prenez un screenshot</h4>
+                                <p>Image claire et haute qualité</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Soumettez sur Discord</h4>
+                                <p>Postez avant la deadline</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">🏆 Classement du mois</h3>
+                    <div class="table-responsive">
+                        <table class="leaderboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Rang</th>
+                                    <th>Joueur</th>
+                                    <th>Style</th>
+                                    <th>Originalité</th>
+                                    <th>Thème</th>
+                                    <th>Bonus</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- MODIFIER ICI : Résultats du classement (Top 10) -->
+                                <tr class="rank-1">
+                                    <td><span class="rank-badge gold">1</span></td>
+                                    <td class="player-name">ShadowWolf</td>
+                                    <td>9/10</td>
+                                    <td>10/10</td>
+                                    <td>9/10</td>
+                                    <td>+2</td>
+                                    <td class="score">30</td>
+                                </tr>
+                                <tr class="rank-2">
+                                    <td><span class="rank-badge silver">2</span></td>
+                                    <td class="player-name">MoonHunter</td>
+                                    <td>8/10</td>
+                                    <td>9/10</td>
+                                    <td>10/10</td>
+                                    <td>+0</td>
+                                    <td class="score">27</td>
+                                </tr>
+                                <tr class="rank-3">
+                                    <td><span class="rank-badge bronze">3</span></td>
+                                    <td class="player-name">AlphaKing</td>
+                                    <td>9/10</td>
+                                    <td>8/10</td>
+                                    <td>8/10</td>
+                                    <td>+2</td>
+                                    <td class="score">27</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="player-name">NightRider</td>
+                                    <td>7/10</td>
+                                    <td>8/10</td>
+                                    <td>9/10</td>
+                                    <td>+0</td>
+                                    <td class="score">24</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="player-name">StarGazer</td>
+                                    <td>8/10</td>
+                                    <td>7/10</td>
+                                    <td>8/10</td>
+                                    <td>+0</td>
+                                    <td class="score">23</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- MODAL / PAGE DÉTAILS - XP -->
+    <!-- ============================================ -->
+    <div id="modal-xp" class="modal">
+        <div class="modal-overlay" onclick="closeEvent()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeEvent()">×</button>
+            
+            <div class="modal-header">
+                <span class="section-icon">⚡</span>
+                <h2 class="section-title">Concours XP</h2>
+                <p class="section-subtitle">Mensuel — Progression maximale</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="card">
+                    <h3 class="card-title">À propos du concours</h3>
+                    <p class="card-text">
+                        Le concours XP récompense les joueurs les plus actifs et déterminés du mois. Grindez un maximum d'XP durant toute la période et montez dans le classement. Les 10 meilleurs joueurs selon leur progression totale remportent des récompenses exclusives.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Règles officielles</h3>
+                    <ul class="rules-list">
+                        <li>
+                            <span class="rule-number">1</span>
+                            <div class="rule-content">
+                                <strong>Screenshot XP de départ</strong> — Obligatoire le 1er jour du mois
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">2</span>
+                            <div class="rule-content">
+                                <strong>Screenshot XP de fin</strong> — Obligatoire le dernier jour du mois
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">3</span>
+                            <div class="rule-content">
+                                <strong>Calcul de progression</strong> — XP gagnée = XP fin - XP départ
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">4</span>
+                            <div class="rule-content">
+                                <strong>Deadline soumission</strong> — 
+                                <!-- MODIFIER ICI : Date limite -->
+                                28 Février 2026 à 23h59 UTC
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Preuves demandées</h3>
+                    <div class="proof-grid">
+                        <div class="proof-card">
+                            <div class="proof-icon">📸</div>
+                            <h4>Screenshot Début</h4>
+                            <p>Capture d'écran de votre XP au 1er jour du mois</p>
+                            <ul class="proof-requirements">
+                                <li>Nom d'utilisateur visible</li>
+                                <li>XP total lisible</li>
+                                <li>Date/heure visible</li>
+                            </ul>
+                        </div>
+                        <div class="proof-card">
+                            <div class="proof-icon">📸</div>
+                            <h4>Screenshot Fin</h4>
+                            <p>Capture d'écran de votre XP au dernier jour</p>
+                            <ul class="proof-requirements">
+                                <li>Nom d'utilisateur visible</li>
+                                <li>XP total lisible</li>
+                                <li>Date/heure visible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">🏆 Classement XP du mois</h3>
+                    <div class="table-responsive">
+                        <table class="leaderboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Rang</th>
+                                    <th>Joueur</th>
+                                    <th>XP Début</th>
+                                    <th>XP Fin</th>
+                                    <th>XP Gagnée</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- MODIFIER ICI : Résultats du classement XP (Top 10) -->
+                                <tr class="rank-1">
+                                    <td><span class="rank-badge gold">1</span></td>
+                                    <td class="player-name">Grindmaster</td>
+                                    <td>45,230</td>
+                                    <td>78,560</td>
+                                    <td class="score">33,330</td>
+                                </tr>
+                                <tr class="rank-2">
+                                    <td><span class="rank-badge silver">2</span></td>
+                                    <td class="player-name">XPHunter</td>
+                                    <td>38,900</td>
+                                    <td>69,450</td>
+                                    <td class="score">30,550</td>
+                                </tr>
+                                <tr class="rank-3">
+                                    <td><span class="rank-badge bronze">3</span></td>
+                                    <td class="player-name">NoSleep</td>
+                                    <td>52,100</td>
+                                    <td>81,230</td>
+                                    <td class="score">29,130</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="player-name">GrindGod</td>
+                                    <td>29,400</td>
+                                    <td>55,780</td>
+                                    <td class="score">26,380</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="player-name">LevelUp</td>
+                                    <td>41,200</td>
+                                    <td>66,890</td>
+                                    <td class="score">25,690</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- MODAL / PAGE DÉTAILS - QUÊTES -->
+    <!-- ============================================ -->
+    <div id="modal-quests" class="modal">
+        <div class="modal-overlay" onclick="closeEvent()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeEvent()">×</button>
+            
+            <div class="modal-header">
+                <span class="section-icon">🎯</span>
+                <h2 class="section-title">Quêtes Spéciales</h2>
+                <p class="section-subtitle">Mensuel — Validation STAFF · Premier à 10 quêtes gagne</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="card">
+                    <h3 class="card-title">À propos des Quêtes Spéciales</h3>
+                    <p class="card-text">
+                        Chaque joueur peut claim une quête aléatoire parmi un pool de défis variés. Une fois la quête claimée, vous devez la compléter et fournir une preuve (screenshot ou vidéo) pour validation par le STAFF. <strong>Une seule quête active à la fois</strong>. Le premier joueur à atteindre <strong>10 quêtes validées</strong> remporte la récompense mensuelle !
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Règles officielles</h3>
+                    <ul class="rules-list">
+                        <li>
+                            <span class="rule-number">1</span>
+                            <div class="rule-content">
+                                <strong>Claim d'une quête aléatoire</strong> — Utilisez le système Discord
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">2</span>
+                            <div class="rule-content">
+                                <strong>Une seule quête active</strong> — Complétez avant de claim une autre
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">3</span>
+                            <div class="rule-content">
+                                <strong>Validation STAFF</strong> — Statuts : <span class="status-pending">En attente</span>, <span class="status-approved">Approuvé</span>, <span class="status-rejected">Refusé</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">4</span>
+                            <div class="rule-content">
+                                <strong>Objectif</strong> — Premier à 10 quêtes validées gagne
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rule-number">5</span>
+                            <div class="rule-content">
+                                <strong>Temps limite</strong> — 
+                                <!-- MODIFIER ICI : Temps limite par quête -->
+                                72 heures par quête (optionnel)
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">📋 Exemples de quêtes possibles</h3>
+                    <div class="quest-examples-grid">
+                        <div class="quest-example-item easy">
+                            <span class="quest-difficulty-icon">⭐</span>
+                            <span class="quest-text">Jouez 5 parties en mode classique</span>
+                        </div>
+                        <div class="quest-example-item easy">
+                            <span class="quest-difficulty-icon">⭐</span>
+                            <span class="quest-text">Gagnez 1 partie en tant que Loup-Garou</span>
+                        </div>
+                        <div class="quest-example-item medium">
+                            <span class="quest-difficulty-icon">⭐⭐</span>
+                            <span class="quest-text">Gagnez 3 parties consécutives</span>
+                        </div>
+                        <div class="quest-example-item medium">
+                            <span class="quest-difficulty-icon">⭐⭐</span>
+                            <span class="quest-text">Atteignez 60% win rate sur 10 parties</span>
+                        </div>
+                        <div class="quest-example-item hard">
+                            <span class="quest-difficulty-icon">⭐⭐⭐</span>
+                            <span class="quest-text">Gagnez 5 parties en rôle solo</span>
+                        </div>
+                        <div class="quest-example-item hard">
+                            <span class="quest-difficulty-icon">⭐⭐⭐</span>
+                            <span class="quest-text">Survivez en étant suspect #1</span>
+                        </div>
+                        <div class="quest-example-item medium">
+                            <span class="quest-difficulty-icon">⭐⭐</span>
+                            <span class="quest-text">Gagnez sans voter une seule fois</span>
+                        </div>
+                        <div class="quest-example-item easy">
+                            <span class="quest-difficulty-icon">⭐</span>
+                            <span class="quest-text">Participez à 3 parties rapides</span>
+                        </div>
+                        <div class="quest-example-item hard">
+                            <span class="quest-difficulty-icon">⭐⭐⭐</span>
+                            <span class="quest-text">Win streak de 7 parties</span>
+                        </div>
+                        <div class="quest-example-item medium">
+                            <span class="quest-difficulty-icon">⭐⭐</span>
+                            <span class="quest-text">Identifiez 3 Loups (Voyante)</span>
+                        </div>
+                        <div class="quest-example-item easy">
+                            <span class="quest-difficulty-icon">⭐</span>
+                            <span class="quest-text">Votez le premier jour et ayez raison</span>
+                        </div>
+                        <div class="quest-example-item hard">
+                            <span class="quest-difficulty-icon">⭐⭐⭐</span>
+                            <span class="quest-text">Gagnez en 1v1 final</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">🏆 Leaderboard Quêtes</h3>
+                    <div class="table-responsive">
+                        <table class="leaderboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Rang</th>
+                                    <th>Joueur</th>
+                                    <th>Validées</th>
+                                    <th>Progression</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- MODIFIER ICI : Résultats leaderboard Quêtes -->
+                                <tr class="rank-1">
+                                    <td><span class="rank-badge gold">1</span></td>
+                                    <td class="player-name">QuestMaster</td>
+                                    <td class="score">8</td>
+                                    <td>
+                                        <div class="mini-progress">
+                                            <div class="mini-progress-bar" style="--width: 80%"></div>
+                                            <span>80%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="rank-2">
+                                    <td><span class="rank-badge silver">2</span></td>
+                                    <td class="player-name">Achiever</td>
+                                    <td class="score">7</td>
+                                    <td>
+                                        <div class="mini-progress">
+                                            <div class="mini-progress-bar" style="--width: 70%"></div>
+                                            <span>70%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="rank-3">
+                                    <td><span class="rank-badge bronze">3</span></td>
+                                    <td class="player-name">ChallengeKing</td>
+                                    <td class="score">6</td>
+                                    <td>
+                                        <div class="mini-progress">
+                                            <div class="mini-progress-bar" style="--width: 60%"></div>
+                                            <span>60%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="player-name">Speedrunner</td>
+                                    <td class="score">5</td>
+                                    <td>
+                                        <div class="mini-progress">
+                                            <div class="mini-progress-bar" style="--width: 50%"></div>
+                                            <span>50%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="player-name">ProGamer</td>
+                                    <td class="score">5</td>
+                                    <td>
+                                        <div class="mini-progress">
+                                            <div class="mini-progress-bar" style="--width: 50%"></div>
+                                            <span>50%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- MODAL / PAGE DÉTAILS - FAQ -->
+    <!-- ============================================ -->
+    <div id="modal-faq" class="modal">
+        <div class="modal-overlay" onclick="closeEvent()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeEvent()">×</button>
+            
+            <div class="modal-header">
+                <span class="section-icon">❓</span>
+                <h2 class="section-title">FAQ & Contact</h2>
+                <p class="section-subtitle">Questions fréquentes et support</p>
+            </div>
+
+            <div class="modal-body">
+                <h3 class="faq-section-title">Questions fréquentes</h3>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">Comment participer aux événements ?</summary>
+                    <div class="faq-answer">
+                        <p>Pour participer :</p>
+                        <ol>
+                            <li>Être membre du clan Elite Lounge</li>
+                            <li>Rejoindre notre serveur Discord</li>
+                            <li>Suivre les instructions spécifiques</li>
+                            <li>Soumettre vos preuves avant la deadline</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">Puis-je participer à plusieurs concours ?</summary>
+                    <div class="faq-answer">
+                        <p>Oui ! Vous pouvez participer aux trois concours (Skins, XP, et Quêtes) en même temps durant le mois.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">Comment sont validées les preuves ?</summary>
+                    <div class="faq-answer">
+                        <p>Notre équipe STAFF examine toutes les soumissions dans les 48h. Les preuves doivent être claires, authentiques et conformes.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">Que se passe-t-il en cas de triche ?</summary>
+                    <div class="faq-answer">
+                        <p>Toute tentative de fraude entraîne une disqualification immédiate et un bannissement des futurs événements.</p>
+                    </div>
+                </details>
+
+                <div class="card card-contact">
+                    <h3 class="card-title">Contact & Support</h3>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Discord</div>
+                                <!-- MODIFIER ICI : Lien Discord -->
+                                <a href="#" class="contact-link">discord.gg/elitelounge</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">👥</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Staff</div>
+                                <!-- MODIFIER ICI : Noms du STAFF -->
+                                <div class="contact-value">@AdminElite, @ModPro</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Horaires</div>
+                                <div class="contact-value">7j/7 — 18h-23h UTC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-title">
+                        <span class="crown">♛</span>
+                        Elite Lounge
+                        <span class="crown">♛</span>
+                    </h3>
+                    <p class="footer-tagline">Wolvesville Events — Rejoignez l'élite</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Lounge — Wolvesville Events</p>
+                <p class="footer-disclaimer">Site non-officiel créé par et pour la communauté Wolvesville</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT - Gestion des modals -->
+    <!-- ============================================ -->
+    <script>
+        // Ouvrir une modal
+        function openEvent(eventId) {
+            const modal = document.getElementById('modal-' + eventId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Fermer la modal active
+        function closeEvent() {
+            const activeModal = document.querySelector('.modal.active');
+            if (activeModal) {
+                activeModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Fermer avec la touche Échap
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeEvent();
+            }
+        });
+    </script>
+
+</body>
+</html>
